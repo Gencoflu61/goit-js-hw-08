@@ -79,12 +79,12 @@ function imageTemplate(image){
 `
 }
 
-function imageTemplate(images){
-    return images.map(imageTemplate).join("");
+function createImageMarkup(images){
+    return images.map(createImageMarkup).join("");
 }
 
 function renderImages() {
-    const markup = imageTemplate(images);
+    const markup = createImageMarkup(images);
     ulGallery.innerHTML = markup;
 }
 renderImages();
