@@ -79,8 +79,8 @@ function imageTemplate(image){
 `
 }
 
-function imageTemplate(iamges){
-    return images.map(imageTemplate).join("");
+function createImageMarkup(iamges){
+    return images.map(createImageMarkup).join("");
 }
 
 function renderImages() {
