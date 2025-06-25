@@ -1,34 +1,12 @@
-ul,
-ol {
-  list-style: none;
-}
-img {
-  display: block;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.section-gallery {
-  max-width: 1128px;
-  padding: 15px;
-}
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  gap: 24px;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 0fr 0fr 0fr;
+  margin: 0 auto;
+  width: 1440px;
+  margin-top:200px;
 }
-.gallery-item {
-  max-width: 360px;
-  max-height: 200px;
-  width: calc((100% - 48px) / 3);
-}
-.gallery-image {
-  width: 360px;
-  height: 200px;
-}
-.modal-img {
-  max-width: 1112px;
-  max-height: 640px;
+
+li {
+  list-style: none;
 }
